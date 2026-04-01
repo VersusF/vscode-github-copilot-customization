@@ -18,7 +18,12 @@ Wait for the response before continuing.
 
 ### 2. Get the Diff
 
-Run the following commands to get the diff:
+Get the branch name:
+```bash
+git rev-parse --abbrev-ref HEAD
+```
+
+Get the diff against develop:
 
 ```bash
 git diff develop...HEAD
